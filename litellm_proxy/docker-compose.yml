@@ -4,8 +4,8 @@ services:
     pull_policy: always
     volumes:
      - ./config.yaml:/app/config.yaml
-    # command:
-    #  - "--config=/app/config.yaml"
+    command:
+     - "--config=/app/config.yaml"
     expose:
       - 4000 # Map the container port to the host, change the host port if necessary
     environment:
