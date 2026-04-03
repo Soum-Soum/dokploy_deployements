@@ -1,6 +1,6 @@
 services:
   litellm:
-    image: docker.litellm.ai/berriai/litellm:main-stable
+    image: docker.litellm.ai/berriai/litellm:${LITELLM_VERSION:-main-stable}
     pull_policy: always
     volumes:
      - ./config.yaml:/app/config.yaml
