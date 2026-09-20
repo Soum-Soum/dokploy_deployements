@@ -1,0 +1,8 @@
+bindPort = 7000
+
+vhostHTTPPort = 8080
+
+subDomainHost = "fprs.gedeon.care"
+
+auth.method = "token"
+auth.token = "{{ .Envs.FRP_TOKEN }}"
